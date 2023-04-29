@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+#hero-section {
+  height: 100vh;
+  background-color: #393e46;
+  position: relative;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.navbar_items {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-nav {
+  gap: 4rem;
+}
+.nav-link {
+  color: #4ecca3;
+}
+
+/* .nav-bar {
+  display: flex;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  align-items: center;
+}
+
+.nav-bar__sections {
+  color: #4ecca3;
+}
+
+.nav-bar__sections {
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-end;
+  justify-items: space-around;
+  width: 100%;
+  align-items: center;
+} */
+.logo {
+  color: #ffff;
+  font-size: 3rem;
+}
+
+.principal_color {
+  color: #4ecca3;
+}
+
+.hero-section__content {
+  color: #ffff;
+  display: flex;
+  margin: 7rem 12% 0 12%;
+  gap: 15rem;
+}
+
+.hero-section__content img {
+  height: 400px;
+}
+.content_text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 3rem;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.content_text h2,
+.content_text h1,
+.content_text p {
+  margin: 0;
+}
+
+.cv_button {
+  background-color: #4ecca3;
+  color: #ffff;
+  border-radius: 50px;
+  width: 250px;
+  height: 70px;
+  margin-left: 12%;
+  margin-top: 4rem;
+}
+/* @media (min-width: 319px) and (max-width: 480px) {
+  .content_text {
+    font-size: 0.5rem;
+  }
+  .hero-section__content img {
+    height: 200px;
+  }
+  .cv_button {
+    width: 100px;
+    height: 30px;
+  }
+  .cv_button h3 {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-section__content {
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .content_text {
+    font-size: 2rem;
+  }
+  .hero-section__content img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .content_text {
+    font-size: 3rem;
+  }
+  .hero-section__content img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .content_text {
+    font-size: 4rem;
+  }
+  .hero-section__content img {
+    height: 400px;
+  }
+} */
