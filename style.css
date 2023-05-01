@@ -3,9 +3,8 @@ body {
 }
 
 #hero-section {
-  height: 100vh;
-  background-color: #393e46;
-  position: relative;
+  height: fit-content;
+  background-color: black;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -21,6 +20,9 @@ body {
   color: #4ecca3;
 }
 
+.collapse-button {
+  background-color: #4ecca3;
+}
 /* .nav-bar {
   display: flex;
   margin-left: 4rem;
@@ -42,7 +44,7 @@ body {
 } */
 .logo {
   color: #ffff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .principal_color {
@@ -53,7 +55,7 @@ body {
   color: #ffff;
   display: flex;
   margin: 7rem 12% 0 12%;
-  gap: 15rem;
+  gap: 13rem;
 }
 
 .hero-section__content img {
@@ -65,7 +67,14 @@ body {
   height: 100%;
   gap: 3rem;
   justify-content: center;
-  font-size: 5rem;
+  font-weight: bold;
+}
+.content_text p {
+  font-size: 3rem;
+}
+
+.content_text h1 {
+  font-size: 4rem;
 }
 
 .content_text h2,
@@ -79,9 +88,62 @@ body {
   color: #ffff;
   border-radius: 50px;
   width: 250px;
-  height: 70px;
+  height: 80px;
   margin-left: 12%;
-  margin-top: 4rem;
+  margin-bottom: 20rem;
+}
+
+.cv_button h3 {
+  font-size: large;
+}
+
+#aboutMe-section {
+  height: fit-content;
+  background-color: #232931;
+}
+
+.about-me__container {
+  display: flex;
+  padding-left: 400px;
+  padding-right: 450px;
+  gap: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.about-me__content {
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about-me__content h2 {
+  font-size: larger;
+  color: #4ecca3;
+}
+.about-me__content p {
+  font-weight: bold;
+  font-size: larger;
+}
+.about-me__picture {
+  height: 350px;
+  border-left: #4ecca3 4px solid;
+  border-bottom: #4ecca3 4px solid;
+}
+.about-me__specifications {
+  display: grid;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  border: #4ecca3 2px solid;
+}
+
+.about-me__specifications p {
+  font-size: medium;
+}
+.about-me__specifications span {
+  font-weight: 100;
 }
 /* @media (min-width: 319px) and (max-width: 480px) {
   .content_text {
@@ -97,9 +159,9 @@ body {
   .cv_button h3 {
     font-size: 0.5rem;
   }
-}
+} */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .hero-section__content {
   }
 }
@@ -112,21 +174,117 @@ body {
     height: 300px;
   }
 }
-
-@media (min-width: 481px) and (max-width: 1200px) {
-  .content_text {
-    font-size: 3rem;
+*/
+@media (max-width: 540px) {
+  .hero-section__content {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
   }
+
+  .content_text {
+    align-items: center;
+    font-size: 0.5rem;
+    gap: 2rem;
+  }
+
+  .content_text p {
+    font-size: 1.5rem;
+  }
+
+  .content_text h1 {
+    font-size: 1.5rem;
+  }
+
   .hero-section__content img {
-    height: 350px;
+    height: 250px;
+  }
+
+  .cv-button__container {
+    display: flex;
+    justify-content: center;
+  }
+  .cv_button {
+    width: 200px;
+    margin-top: 0;
+    height: 60px;
+    font-size: medium;
+    margin-left: 0;
+  }
+  .navbar-nav {
+    gap: 2rem;
+    flex-direction: row;
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1600px) {
+@media (min-width: 541px) and (max-width: 990px) {
+  .hero-section__content {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .content_text {
+    align-items: center;
+    font-size: 0.5rem;
+    gap: 2rem;
+  }
+
+  .content_text p {
+    font-size: 2.5rem;
+  }
+
+  .content_text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section__content img {
+    height: 250px;
+  }
+
+  .cv-button__container {
+    display: flex;
+    justify-content: center;
+  }
+  .cv_button {
+    width: 200px;
+    margin-top: 0;
+    height: 60px;
+    font-size: medium;
+    margin-left: 0;
+  }
+  .navbar-nav {
+    gap: 2rem;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .content_text {
+    font-size: 2rem;
+  }
+  .hero-section__content {
+    gap: 5rem;
+  }
+
+  .hero-section__content img {
+    height: 390px;
+  }
+  .cv_button {
+    width: 200px;
+    margin-top: 3rem;
+    height: 60px;
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1201px) {
   .content_text {
     font-size: 4rem;
   }
   .hero-section__content img {
     height: 400px;
   }
-} */
+}
