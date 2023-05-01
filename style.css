@@ -1,4 +1,5 @@
 body {
+  background-color: black;
   margin: 0;
 }
 
@@ -23,25 +24,7 @@ body {
 .collapse-button {
   background-color: #4ecca3;
 }
-/* .nav-bar {
-  display: flex;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  align-items: center;
-}
 
-.nav-bar__sections {
-  color: #4ecca3;
-}
-
-.nav-bar__sections {
-  display: flex;
-  gap: 4rem;
-  justify-content: flex-end;
-  justify-items: space-around;
-  width: 100%;
-  align-items: center;
-} */
 .logo {
   color: #ffff;
   font-size: 2rem;
@@ -54,7 +37,7 @@ body {
 .hero-section__content {
   color: #ffff;
   display: flex;
-  margin: 7rem 12% 0 12%;
+  margin: 7rem 12% 0 21%;
   gap: 13rem;
 }
 
@@ -89,8 +72,8 @@ body {
   border-radius: 50px;
   width: 250px;
   height: 80px;
-  margin-left: 12%;
-  margin-bottom: 20rem;
+  margin-left: 20%;
+  margin-bottom: 10rem;
 }
 
 .cv_button h3 {
@@ -99,13 +82,13 @@ body {
 
 #aboutMe-section {
   height: fit-content;
-  background-color: #232931;
+  background-color: black;
 }
 
 .about-me__container {
   display: flex;
-  padding-left: 400px;
-  padding-right: 450px;
+  padding-left: 23%;
+  padding-right: 30%;
   gap: 4rem;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -121,7 +104,7 @@ body {
   color: #4ecca3;
 }
 .about-me__content p {
-  font-weight: bold;
+  font-weight: 600;
   font-size: larger;
 }
 .about-me__picture {
@@ -145,37 +128,152 @@ body {
 .about-me__specifications span {
   font-weight: 100;
 }
-/* @media (min-width: 319px) and (max-width: 480px) {
-  .content_text {
-    font-size: 0.5rem;
-  }
-  .hero-section__content img {
-    height: 200px;
-  }
-  .cv_button {
-    width: 100px;
-    height: 30px;
-  }
-  .cv_button h3 {
-    font-size: 0.5rem;
-  }
-} */
 
-/* @media (max-width: 800px) {
-  .hero-section__content {
-  }
+#skills-section {
+  padding-top: 5rem;
+  background-color: black;
 }
 
-@media (min-width: 481px) and (max-width: 1200px) {
+.skills-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-section__text {
+  color: #ffff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.skills-section__text h2 {
+  color: #4ecca3;
+}
+
+.skills-section__text p {
+  font-size: xx-large;
+}
+
+.skills-section__text h2,
+.skills-section__text h1,
+.skills-section__text p {
+  padding-bottom: 15px;
+}
+
+.skill-icons {
+  color: #4ecca3;
+  font-size: 12rem;
+}
+.skill-set__table {
+  padding-left: 2%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10rem;
+  column-gap: 20rem;
+}
+
+.skill-set__table p {
+  font-size: medium;
+
+  text-align: center;
+}
+
+#proyects-section {
+  margin-top: 10rem;
+}
+
+#proyects-section h1 {
+  text-align: center;
+  color: #ffff;
+}
+
+@media only screen and (max-width: 320px) {
+  .hero-section__content {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
   .content_text {
+    align-items: center;
+    font-size: 0.5rem;
+    gap: 2rem;
+  }
+
+  .content_text p {
+    font-size: 1.5rem;
+  }
+
+  .content_text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section__content img {
+    height: 250px;
+  }
+
+  .cv-button__container {
+    display: flex;
+    justify-content: center;
+  }
+  .cv_button {
+    width: 200px;
+    margin-top: 0;
+    height: 60px;
+    font-size: medium;
+    margin-top: 5rem;
+    margin-left: 7%;
+  }
+  .navbar-nav {
+    gap: 2rem;
+    flex-direction: row;
+  }
+  .about-me__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me__specifications p {
+    font-size: 0.5rem;
+  }
+  .about-me__content h2 {
+    font-size: large;
+  }
+  .about-me__content {
+    align-items: center;
+  }
+  .about-me__content p {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .about-me__picture {
+    height: 250px;
+  }
+  .skill-set__table {
+    grid-template-columns: 1fr;
+    column-gap: 4rem;
+    row-gap: 2.5rem;
+  }
+  .skills-section__text p {
+    font-size: 0.7rem;
+  }
+  .skills-section__text h1 {
     font-size: 2rem;
   }
-  .hero-section__content img {
-    height: 300px;
+  .skills-section__text h2 {
+    font-size: 1.5rem;
+  }
+  .skill-icons {
+    font-size: 5rem;
+  }
+  .skill-set__table p {
+    font-size: small;
+    text-align: center;
   }
 }
-*/
-@media (max-width: 540px) {
+
+@media only screen and (min-width: 321px) and (max-width: 540px) {
   .hero-section__content {
     flex-direction: column;
     gap: 1.5rem;
@@ -210,15 +308,54 @@ body {
     margin-top: 0;
     height: 60px;
     font-size: medium;
-    margin-left: 0;
+    margin-top: 5rem;
+    margin-left: 7%;
   }
   .navbar-nav {
     gap: 2rem;
     flex-direction: row;
   }
+  .about-me__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me__specifications p {
+    font-size: small;
+  }
+  .about-me__content h2 {
+    font-size: large;
+  }
+  .about-me__content {
+    align-items: center;
+  }
+  .about-me__content p {
+    font-size: small;
+    text-align: center;
+  }
+  .about-me__picture {
+    height: 250px;
+  }
+  .skill-set__table {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 2.5rem;
+  }
+  .skills-section__text p {
+    font-size: 1rem;
+  }
+  .skills-section__text h1 {
+    font-size: 2rem;
+  }
+  .skills-section__text h2 {
+    font-size: 1.5rem;
+  }
+  .skill-icons {
+    font-size: 7.5rem;
+  }
 }
 
-@media (min-width: 541px) and (max-width: 990px) {
+@media only screen and (min-width: 541px) and (max-width: 990px) {
   .hero-section__content {
     flex-direction: column;
     gap: 1.5rem;
@@ -233,7 +370,7 @@ body {
   }
 
   .content_text p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .content_text h1 {
@@ -253,15 +390,49 @@ body {
     margin-top: 0;
     height: 60px;
     font-size: medium;
-    margin-left: 0;
+    margin-left: 8%;
   }
   .navbar-nav {
     gap: 2rem;
     flex-direction: row;
   }
+  .about-me__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me__specifications p {
+    font-size: small;
+  }
+  .about-me__content h2 {
+    font-size: larger;
+  }
+  .about-me__content h1 {
+    font-size: x-large;
+  }
+  .about-me__content {
+    align-items: center;
+  }
+  .skill-set__table {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 3rem;
+  }
+  .skills-section__text p {
+    font-size: 1.5rem;
+  }
+  .skill-icons {
+    font-size: 10rem;
+  }
 }
 
-@media (min-width: 991px) and (max-width: 1200px) {
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .about-me__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .content_text {
     font-size: 2rem;
   }
@@ -278,13 +449,63 @@ body {
     height: 60px;
     font-size: medium;
   }
+  .skills-section__text p {
+    font-size: x-large;
+  }
+  .skill-set__table {
+    column-gap: 5rem;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1380px) {
+  .about-me__content p {
+    font-size: medium;
+  }
+  .about-me__specifications p {
+    font-size: small;
+  }
+  .about-me__content h2 {
+    font-size: larger;
+  }
+  .about-me__container {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .skill-set__table {
+    column-gap: 10rem;
+  }
+  .skills-section__text p {
+    font-size: x-large;
+  }
 }
 
-@media (min-width: 1201px) {
+@media only screen and (min-width: 1381px) and (max-width: 1540px) {
+  .about-me__content p {
+    font-size: medium;
+  }
+  .about-me__specifications p {
+    font-size: small;
+  }
+  .about-me__content h2 {
+    font-size: large;
+  }
+  .about-me__container {
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 1541px) and (max-width: 1660px) {
   .content_text {
     font-size: 4rem;
   }
   .hero-section__content img {
     height: 400px;
+  }
+
+  .about-me__content p {
+    font-size: large;
+  }
+
+  .about-me__specifications p {
+    font-size: small;
   }
 }
