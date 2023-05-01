@@ -38,9 +38,9 @@
             >
               <div class="navbar-nav">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Skills</a>
-                <a class="nav-link" href="#">Proyects</a>
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#skills-section">Skills</a>
+                <a class="nav-link" href="#proyects-section">Proyects</a>
+                <a class="nav-link" href="#aboutMe-section">About Me</a>
                 <a class="nav-link" href="#">Contact Me</a>
               </div>
             </div>
@@ -152,11 +152,69 @@
       </section>
       <section id="proyects-section">
         <div class="proyects-section__container">
-          <h1>Proyects</h1>
-          <div class="proyects-section__cards"></div>
+          <h1>My Proyects</h1>
+          <div class="proyects-section__cards">
+            <div class="card text-bg-dark" style="width: 18rem">
+              <img
+                src="./Assets/forkifyApp.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Recipes-App</h5>
+                <p class="card-text">
+                  This app allows you to search for any food recipe, it's made
+                  in Vanilla Javascript and with an public API.
+                </p>
+                <a href="#skills-section" class="btn btn-light">View proyect</a>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 18rem">
+              <img
+                src="./Assets/Restaurant-Review-App.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Review-Restaurant-App</h5>
+                <p class="card-text">
+                  The main functionality of this app is to add Reviews of
+                  Restaurants. It's made in React, Node.js and MongoDB.
+                </p>
+                <a href="#" class="btn btn-light">View proyect</a>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 18rem">
+              <img
+                src="./Assets/Twitter-Clone.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Twitter-Clone</h5>
+                <p class="card-text">
+                  It's basically a clone of Twitter with less functionalities.
+                  It's made completely in React.
+                </p>
+                <a href="#" class="btn btn-light">View proyect</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="contactMe-section"></section>
+      <section id="contactMe-section">
+        <div class="contactMe-section__container">
+          <div class="contactMe-section__socials">
+            <a href=""><i class="fa-brands fa-instagram social-icon"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin social-icon"></i></a>
+            <a href=""><i class="fa-brands fa-github social-icon"></i></a>
+          </div>
+          <hr />
+          <div class="contactMe-section__footer">
+            <p>@ 2023 Company, all rights reserved.</p>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="index.js"></script>
     <script
