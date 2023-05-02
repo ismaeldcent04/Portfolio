@@ -18,6 +18,10 @@ body {
   gap: 4rem;
 }
 .nav-link {
+  color: white;
+}
+
+.nav-link:active {
   color: #4ecca3;
 }
 
@@ -303,6 +307,23 @@ body {
     font-size: small;
     text-align: center;
   }
+  .proyects-section__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .card {
+    width: 200px !important;
+  }
+  .social-icon {
+    font-size: 2rem;
+  }
+  .contactMe-section__socials {
+    gap: 1rem;
+  }
+  .contactMe-section__footer p {
+    font-size: small;
+  }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 540px) {
@@ -385,6 +406,23 @@ body {
   .skill-icons {
     font-size: 7.5rem;
   }
+  .proyects-section__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .card {
+    width: 225px !important;
+  }
+  .social-icon {
+    font-size: 2rem;
+  }
+  .contactMe-section__socials {
+    gap: 1rem;
+  }
+  .contactMe-section__footer p {
+    font-size: small;
+  }
 }
 
 @media only screen and (min-width: 541px) and (max-width: 990px) {
@@ -456,6 +494,15 @@ body {
   .skill-icons {
     font-size: 10rem;
   }
+  .proyects-section__cards {
+    gap: 1rem;
+  }
+  .card {
+    width: 250px !important;
+  }
+  .social-icon {
+    font-size: 4rem;
+  }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -486,6 +533,15 @@ body {
   }
   .skill-set__table {
     column-gap: 5rem;
+  }
+  .proyects-section__cards {
+    gap: 2rem;
+  }
+  .card {
+    width: 250px !important;
+  }
+  .social-icon {
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1380px) {
