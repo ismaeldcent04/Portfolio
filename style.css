@@ -21,6 +21,10 @@ body {
   color: white;
 }
 
+.nav-link:hover {
+  color: #4ecca3;
+}
+
 .nav-link:active {
   color: #4ecca3;
 }
@@ -75,13 +79,14 @@ body {
   color: #ffff;
   border-radius: 50px;
   width: 250px;
-  height: 80px;
+  height: 70px;
   margin-left: 20%;
   margin-bottom: 10rem;
 }
 
 .cv_button h3 {
   font-size: large;
+  margin-bottom: 0;
 }
 
 #aboutMe-section {
